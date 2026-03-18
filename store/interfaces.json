@@ -1,0 +1,6 @@
+{
+  "floating-button": {
+    "component": "WhatsappButton",
+    "after": ["store.home", "store.product", "store.search", "store.custom"]
+  }
+}

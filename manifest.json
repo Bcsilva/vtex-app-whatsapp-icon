@@ -1,0 +1,42 @@
+{
+  "vendor": "vendor",
+  "name": "vtex-app-whatsapp-icon",
+  "version": "0.0.1",
+  "title": "Whatsapp icon (VTEX External App)",
+  "description": "Simple external VTEX component to place a fixed Whatsapp icon on screen",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "messages": "1.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose --yes"
+  },
+  "settingsSchema": {
+    "title": "Whatsapp icon (VTEX External App)",
+    "type": "object",
+    "properties": {
+      "enabled": {
+        "title": "Active?",
+        "type": "boolean",
+        "default": true
+      },
+      "floatingLink": {
+        "title": "Floating button link",
+        "description": "Link to the external social media application",
+        "type": "string"
+      },
+      "iconImageUrl": {
+        "title": "Image url",
+        "description": "Wether empty, whatsapp SVG icon by default",
+        "type": "string"
+      }
+    
+    }
+  },
+  "dependencies": {
+    "vtex.render-runtime": "8.x"
+  },
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
